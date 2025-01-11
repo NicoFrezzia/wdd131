@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 150px auto;
+    border: 1px solid #000;
+    padding: 5rem;
+    background-color: #fff;
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 250;
+
+}
+
+header h2 {
+    font-size: 15px;
+    color: #006EB6;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 200;
+}
+
+header hr {
+    border: 0;
+    height: 1px;
+    background-color: #000;
+    margin: 10px auto 20px auto;
+    width: 80%;
+}
+
+/* Main Content Styles */
+main {
+    text-align: left;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main p em {
+    font-style: italic;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 150px;
+    margin-top: 2rem;
+}
