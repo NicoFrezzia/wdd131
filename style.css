@@ -22,3 +22,12 @@ footer {
     font-size: 0.9em;
     background: #ddd;
 }
+.week1 p, .week2 p{
+    text-align: center;
+}
+.week1-2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: space-around;
+}

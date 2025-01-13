@@ -25,14 +25,15 @@ header h1 {
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
-    font-weight: 250;
-
+    font-weight: 100;
+    font-weight: 550;
 }
 
 header h2 {
     font-size: 15px;
     color: #006EB6;
     letter-spacing: 3px;
+    text-transform: uppercase;
     margin-bottom: 5px;
     text-align: center;
     font-weight: 200;
@@ -41,13 +42,14 @@ header h2 {
 header hr {
     border: 0;
     height: 1px;
-    background-color: #000;
+    background-color: lightgrey;
     margin: 10px auto 20px auto;
-    width: 80%;
+    width: 90%;
 }
 
 /* Main Content Styles */
 main {
+    margin-top: 4rem;
     text-align: left;
 }
 
