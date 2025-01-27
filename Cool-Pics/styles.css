@@ -39,6 +39,8 @@ header h1 {
     font-size: 1.5em;
     cursor: pointer;
     display: none;
+    margin: 0 auto;
+    padding-bottom: 1rem;
     /* Hidden by default, shown for small screens */
 }
 
@@ -90,7 +92,11 @@ footer {
 /******************* Responsive *******************/
 @media only screen and (min-width: 300px) {
     nav {
+        display: flex;
         flex-direction: column;
+    }
+    #menu-btn {
+        display: block;
     }
 }
 
@@ -99,7 +105,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
     nav{
-        flex-direction: column;
+        display: none;
+    }
+    #menu-btn {
+        display: block;
     }
 }
 
@@ -109,6 +118,7 @@ footer {
     }
 
     nav {
+        display: flex;
         flex-direction: row;
         gap: 2em;
     }
