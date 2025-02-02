@@ -41,13 +41,18 @@ header h1 {
     display: none;
     margin: 0 auto;
     padding-bottom: 1rem;
-    /* Hidden by default, shown for small screens */
 }
 
-nav {
+/* Initially hide the nav links for small screens */
+#nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#nav-links.show {
     display: flex;
     justify-content: center;
-    gap: 1em;
 }
 
 nav a {
@@ -92,9 +97,9 @@ footer {
 /******************* Responsive *******************/
 @media only screen and (min-width: 300px) {
     nav {
-        display: flex;
         flex-direction: column;
     }
+
     #menu-btn {
         display: block;
     }
@@ -104,26 +109,50 @@ footer {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
-    nav{
-        display: none;
-    }
-    #menu-btn {
-        display: block;
-    }
 }
 
-@media (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
     #menu-btn {
         display: none;
     }
-
-    nav {
+    #nav-links {
         display: flex;
         flex-direction: row;
-        gap: 2em;
+        gap: 2rem;
     }
-
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/******************* Modal Styling *******************/
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
 }
